@@ -1,0 +1,201 @@
+* {
+         /* css reset */
+         margin: 0px;
+         padding: 0px;
+       
+       }
+       
+       :root {
+         /* CSS VARIABLE CUSTOM ITEMS*/
+         --navbar-height: 20px;
+       }
+       
+       #navbar {
+         /* NAVIGATION BAR */
+         display: flex;
+         align-items: center;
+         position: sticky;
+         top: 0px;
+       }
+       
+       /* logo and image navigation */
+       #logo {
+         margin: 4px 4px;
+         padding: 2px 3px;
+       }
+       
+       #logo img {
+         height: 30px;
+         margin: 2px;
+       
+       }
+       
+       #navbar ul {
+         display: flex;
+       }
+       
+       #navbar ul li {
+         list-style: none;
+         font-size: 1.2rem;
+       }
+       
+       #navbar ul li a {
+         display: block;
+         padding: 12px 13px;
+         margin: 2px 3px;
+         text-decoration: none;
+         color: white;
+       }
+       
+       #navbar::before {
+         content: "";
+         background-color: black;
+         position:absolute;
+         height: 100%;
+         width: 100%;
+         z-index: -1;
+         opacity: 0.35;
+         top: 0px;
+       
+       }
+       #home {
+         display: flex;
+         flex-direction: column;
+         padding: 3px 20px;
+         height:600px;
+         justify-content: center;
+         align-items: center;
+       }
+       
+       #home::before {
+         content: "";
+         background :url(images/img3.jpeg) no-repeat center center/cover;
+         position: absolute;
+         height: 107%;
+         width: 100%;
+         z-index: -1;
+         opacity: 100;
+        
+       }
+       /* utility classes */
+       .h-primary{
+         font-size: 3.1rem;
+         padding: 2px;
+         margin: 29px;
+        
+       }
+       .h-secondary{
+         font-size: 2.3rem;
+         padding: 12px;
+         margin: 12px;
+       }
+       
+       #home h1{
+         color:black;
+         text-align: center;
+       }
+       #home p{
+         font-size: 1.1rem;
+         color:white;
+         text-align: center;
+         font-family: 'Cairo Play', cursive;
+       }
+       .btn{
+         padding: 10px;
+         border: 2px solid black;
+         border-radius: 10px;
+         margin: 15px;
+         font-size: 1.2rem;
+         cursor: pointer;
+       }
+       .btn:hover{
+         color:blue;
+       }
+       #services{
+         display: flex;
+         margin: 12px;
+       }
+       .box{
+         border: 2px solid black;
+         padding: 24px;
+         margin: 10px;
+         border-radius: 14px;
+         background-color: azure;
+       }
+       .box img{
+         height: 200px;
+         margin: auto;
+         display: block;
+       }
+       .center{
+         text-align: center;
+       }
+       /* client center  */
+       #client{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       }
+       
+       #client img{
+         height:100px;
+         padding: 38px 12px;
+       }
+       #client-section{
+         height: 337px;
+         position: relative;
+       }
+       /* .class-item{
+         padding: 12px; */
+       
+       #client-section::before{
+         content: "";
+         position: absolute;
+         background: url(images/img1.jpg)no-repeat center center/cover;
+         width:100vw;
+         height: 100%;
+         z-index: -1;
+         opacity:0.5 ;
+       }
+       /* contact section */
+       #contact{
+         position: relative;
+         /* height: 200px;
+         position: relative; */
+       }
+       #contact::before{
+         content: "";
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         background: url(images/img.jpeg)no-repeat center center/cover;
+         z-index: -1;
+         opacity: 0.4;
+       }
+       footer{
+         background-color:grey;
+         color:white;
+         padding: 2px;
+       }
+       #contact-box input,#contact-box textarea{
+         width: 100%;
+         padding: 7px;
+         border-radius: 5px;
+         font-size: 13px;
+       }
+       #contact-box{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+       }
+         #contact-box form{
+         width: 30%;
+        
+       }
+       #contact-box label{
+         font-size: 1.2rem;
+         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       }
+       html{
+         scroll-behavior: smooth;
+       }
